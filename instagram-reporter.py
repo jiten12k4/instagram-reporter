@@ -27,14 +27,14 @@ def chunks(lst, n):
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
 
-def profile_attack_process(username, proxy_list):
+def profile_attack_process(shivam_jaat_4x, proxy_list):
     if (len(proxy_list) == 0):
         for _ in range(10):
-            report_profile_attack(username, None)
+            report_profile_attack(shivam_jaat_4x, None)
         return
 
     for proxy in proxy_list:
-        report_profile_attack(username, proxy)
+        report_profile_attack(shivam_jaat_4x, proxy)
 
 def video_attack_process(video_url, proxy_list):
     if (len(proxy_list) == 0):
